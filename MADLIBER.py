@@ -1,15 +1,16 @@
 import random
+import crayons
 
 def madliber():
     print("Welcome to Mary and Molly's MADLIBER Story!\n")
 
     # Collecting user inputs
-    noun1 = input("Enter a noun (person, place, thing, idea): ")
-    adjective1 = input("Enter an adjective (describes or defines a noun; adorable, bored, calm, busy): ")
-    verb1 = input("Enter a verb (expresses action; run, swim, play, steal : ")
-    adverb1 = input("Enter an adverb (modifies a verb or adverb; loudly, rudely, foolishly): ")
-    adjective2 = input("Enter another adjective: ")
-    noun2 = input("Enter another noun: ")
+    noun1 = input(f'{crayons.red ("Enter a noun (person, place, thing, idea): ")}' )
+    adjective1 = input(f'{crayons.magenta ("Enter an adjective (describes or defines a noun; adorable, bored, calm, busy): ")}' )
+    verb1 = input(f'{crayons.green (" Enter a verb (expresses action; run, swim, play, steal): ")}'  )
+    adverb1 = input(f'{crayons.yellow ("Enter an adverb (modifies a verb or adverb; loudly, rudely, foolishly): ")}'  )
+    adjective2 = input(f'{crayons.blue ("Enter another adjective: ")}'  )
+    noun2 = input(f'{crayons.cyan ("Enter another noun: ")}'  )
     verb2 = input("Enter another verb: ")
     noun3 = input("Enter one more noun: ")
     body_part = input("Enter a body part: ")
