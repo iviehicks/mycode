@@ -5,34 +5,19 @@
 import random
 import crayons
 
+def print_smiling_face():
+    smiling_face = r'''
+    (\__/)      (\__/)
+    (='.'=)     (='.'=) 
+    ('')_('')   ('')_('') 
+    
+    '''
+    print(smiling_face)
+    
+#def print_animal_ascii_art(animal):
+
 def madliber():
-    def print_animal_ascii_art(animal):
-    # Dictionary with ASCII art for different animals
-        animal_ascii_art = {
-        "dog": r'''
- / \__
-(    @\___
- /         O
-/   (_____/
-/_____/   U
-''',
-        "cat": r'''
- /\_/\
-( o.o )
- > ^ <
-''',
-        "fish": r'''
-><(((º>
-''',
-        # Add more animals as needed
-    }
 
-    if animal.lower() in animal_ascii_art:
-        print(animal_ascii_art[animal.lower()])
-    else:
-        print("Sorry, no ASCII art available for that animal.")
-
-#def madliber():
     print("Welcome to Mary and Molly's MADLIBER Story! I need you to answer some questions to help me make a story work. \n")
 
     # Asking the reader for inputs to develop the stories
