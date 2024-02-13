@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
-"""This is my version of MADLIBS that I called MADLIBER, I designed it for my daughters that are 7 and 10 years old.  I wanted to make something that is interactive and educational for them -but most of all good for a laugh! It is not the most advanced Python script, but I learned alot while figuring it out. Enjoy!"""
+"""This is my version of MADLIBS that I called MADLIBER, I designed it for my daughters that are 7 and 10 years old.  I wanted to make something that is interactive and educational for them -but most of all good for a laugh! It is not the most advanced Python script, but I learned alot while figuring it out and I was able to incorporate things like crayons to make it more visually appealing.  Enjoy!"""
 
 import random
 import crayons
+
 
 def madliber():
     print("Welcome to Mary and Molly's MADLIBER Story! I need you to answer some questions to help me make a story work. \n")
@@ -52,6 +53,7 @@ def madliber():
     # Displaying the completed MADLIBER story
     print("\fMary and Molly's Adventure MADLIBER Story:\n")
     print(story)
+   
 
 # Run the MADLIBER function
 madliber()
