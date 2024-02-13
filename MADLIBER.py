@@ -11,7 +11,7 @@ def madliber():
     print(" (='.'=)     (='.'=)")
     print(" ('')_('')   ('')_('')")
 
-    print("Welcome to Mary and Molly's MADLIBER Story! I need you to answer some questions to help me make a story work. \n")
+    print("Welcome to Mary and Molly's MADLIBER Story! I need you to answer some questions to help me make a story. \n")
 
     # Asking the reader for inputs to develop the stories
     noun1 = input(f'{crayons.red ("Enter a noun (person, place, thing, idea): ")}' )
@@ -27,9 +27,9 @@ def madliber():
     color2 = input(f'{crayons.blue ("Enter a different color: ")}'  )
     adjective3 = input(f'{crayons.red ("Enter another adjective:")}'  )
     animal = input(f'{crayons.yellow ("Enter a type of animal: ")}'  )
-    phrase = input(f'{crayons.blue ("Enter a phrase (something you say: Hey youuu guys!!): ")}'  )
+    phrase = input(f'{crayons.blue ("Enter a phrase (something you say, like, Hey youuu guys!!): ")}'  )
 
-    # Generating a random number to select on of the 3 stories
+    # Generating a random number to select one of the 3 stories
     story_number = random.randint(1, 3)
 
     # The base story is selected by the random number
