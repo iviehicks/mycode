@@ -5,18 +5,11 @@
 import random
 import crayons
 
-def print_smiling_face():
-    smiling_face = r'''
-    (\__/)      (\__/)
-    (='.'=)     (='.'=) 
-    ('')_('')   ('')_('') 
-    
-    '''
-    print(smiling_face)
-    
-#def print_animal_ascii_art(animal):
 
 def madliber():
+    print("  (\__/)      (\__/)")
+    print(" (='.'=)     (='.'=)")
+    print(" ('')_('')   ('')_('')")
 
     print("Welcome to Mary and Molly's MADLIBER Story! I need you to answer some questions to help me make a story work. \n")
 
@@ -33,7 +26,7 @@ def madliber():
     color = input(f'{crayons.green ("Enter a color: ")}'  )
     color2 = input(f'{crayons.blue ("Enter a different color: ")}'  )
     adjective3 = input(f'{crayons.red ("Enter another adjective:")}'  )
-    animal = input(f'{crayons.yellow ("Enter a type on animal: ")}'  )
+    animal = input(f'{crayons.yellow ("Enter a type of animal: ")}'  )
     phrase = input(f'{crayons.blue ("Enter a phrase (something you say: Hey youuu guys!!): ")}'  )
 
     # Generating a random number to select on of the 3 stories
