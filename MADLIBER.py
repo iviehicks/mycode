@@ -5,9 +5,10 @@
 import random
 import crayons
 
-def print_animal_ascii_art(animal):
+def madliber():
+    def print_animal_ascii_art(animal):
     # Dictionary with ASCII art for different animals
-    animal_ascii_art = {
+        animal_ascii_art = {
         "dog": r'''
  / \__
 (    @\___
@@ -31,7 +32,7 @@ def print_animal_ascii_art(animal):
     else:
         print("Sorry, no ASCII art available for that animal.")
 
-def madliber():
+#def madliber():
     print("Welcome to Mary and Molly's MADLIBER Story! I need you to answer some questions to help me make a story work. \n")
 
     # Asking the reader for inputs to develop the stories
