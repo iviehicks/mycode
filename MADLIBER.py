@@ -1,10 +1,35 @@
 #!/usr/bin/env python3
 
-"""This is my version of MADLIBS that I called MADLIBER, I designed it for my daughters that are 7 and 10 years old.  I wanted to make something that is interactive and educational for them -but most of all good for a laugh! It is not the most advanced Python script, but I learned alot while figuring it out and I was able to incorporate things like crayons to make it more visually appealing.  Enjoy!"""
+"""This is my version of MADLIBS that I called MADLIBER, I designed it for my daughters that are 7 and 10 years old.  I wanted to make something that is interactive and educational for them -but most of all good for a laugh! It is not the most advanced Python script, but I learned alot while figuring it out and I was able to incorporate things like crayons and ascii art to make it more visually appealing.  Enjoy!"""
 
 import random
 import crayons
 
+def print_animal_ascii_art(animal):
+    # Dictionary with ASCII art for different animals
+    animal_ascii_art = {
+        "dog": r'''
+ / \__
+(    @\___
+ /         O
+/   (_____/
+/_____/   U
+''',
+        "cat": r'''
+ /\_/\
+( o.o )
+ > ^ <
+''',
+        "fish": r'''
+><(((º>
+''',
+        # Add more animals as needed
+    }
+
+    if animal.lower() in animal_ascii_art:
+        print(animal_ascii_art[animal.lower()])
+    else:
+        print("Sorry, no ASCII art available for that animal.")
 
 def madliber():
     print("Welcome to Mary and Molly's MADLIBER Story! I need you to answer some questions to help me make a story work. \n")
@@ -32,7 +57,7 @@ def madliber():
     
     if story_number == 1:
         story = f"\fOnce upon a time, Mary and Molly woke up in a {adjective1} {noun1}, they decided they wanted to go to a {adjective2} {noun2} that was deep inside the {color} forest. " \
-               f"On the way there, Molly tripped and hurt her {body_part}, so Mary bandadged her up till it was nice and {color2}. " \
+               f"On the way there, Molly tripped and hurt her {body_part}, yelling out '{phrase}!' So Mary bandadged her up till it was nice and {color2}. " \
                f"They met a {noun2} who loved to {verb1} {adverb1} and dream about {verb2} the {noun3}, so the girls told him {phrase}! " \
                f"They never made it to the forest, but they had a {adjective3} good time! THE END! " \
     
@@ -45,7 +70,7 @@ def madliber():
     else:  
         story = f"\fGrandma Shauna woke up one morning and remembered she had to move the {adjective1} cows! " \
                 f" She got on her {adjective2} {animal} and rode out across the {color} field." \
-                f"The cows weren't listening so she called Mary and Molly and told them '{phrase}'! " \
+                f"The cows weren't listening so she called Mary and Molly and told them '{phrase}!' " \
                 f"Mary and Molly came to help with their {noun1}.  " \
                 f"During their journey, a {noun2} would often {verb1} {adverb1} and they would marvel at the beauty of a {noun2}. " \
                 f"After they got the cows in, they remembered the {noun1} and realized the true meaning of {verb2} and found inner peace. THE END! " \
