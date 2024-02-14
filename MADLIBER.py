@@ -8,7 +8,7 @@ import crayons
 
 def madliber():
     print("  (\__/)      (\__/)")
-    print(" (='.'=)     (='.'=)")
+    print("  (='.'=)     (='.'=)")
     print(" ('')_('')   ('')_('')")
 
     print("Welcome to Mary and Molly's MADLIBER Story! I need you to answer some questions to help me make a story. \n")
